@@ -90,3 +90,9 @@ Rocco Musolino ([@roccomuso](https://twitter.com/roccomuso))
 ## License
 
 MIT
+
+# NOIP.COM API
+
+https://www.noip.com/integrate/ip-detection
+
+https://www.noip.com/integrate/request
