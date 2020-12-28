@@ -1,11 +1,12 @@
 dependencies:
   axios: 0.21.1
   got: 11.8.1
+  ip: 1.1.5
   ms: 2.1.3
-  prettier: 2.2.1
   yargs: 16.2.0
 devDependencies:
   debug: 4.3.1
+  prettier: 2.2.1
   standard: 16.0.3
 lockfileVersion: 5.2
 packages:
@@ -1069,6 +1070,11 @@ packages:
     resolution:
       integrity: sha1-nC6fs82OXkJWxvRf4xAGf8+jeKM=
       tarball: internal-slot/download/internal-slot-1.0.2.tgz
+  /ip/1.1.5:
+    dev: false
+    resolution:
+      integrity: sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
+      tarball: ip/download/ip-1.1.5.tgz
   /is-arrayish/0.2.1:
     dev: true
     resolution:
@@ -1629,7 +1635,7 @@ packages:
       integrity: sha1-3rxkidem5rDnYRiIzsiAM30xY5Y=
       tarball: prelude-ls/download/prelude-ls-1.2.1.tgz
   /prettier/2.2.1:
-    dev: false
+    dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
@@ -2132,6 +2138,7 @@ specifiers:
   axios: ^0.21.1
   debug: ^4.3.1
   got: ^11.8.1
+  ip: ^1.1.5
   ms: ^2.1.3
   prettier: ^2.2.1
   standard: ^16.0.3
