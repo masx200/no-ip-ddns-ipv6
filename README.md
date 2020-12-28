@@ -26,17 +26,17 @@ or having it globally installed and used as a standalone tool:
 var NoIP = require("@masx200/no-ip-ddns-ipv6");
 
 var noip = new NoIP({
-  hostname: "hello-world.ddns.net",
-  user: "hello@world.com",
-  pass: "s3cr3tz",
+    hostname: "hello-world.ddns.net",
+    user: "hello@world.com",
+    pass: "s3cr3tz",
 });
 
 noip.on("error", function (err) {
-  console.log(err);
+    console.log(err);
 });
 
 noip.on("success", function (isChanged, ip) {
-  console.log(isChanged, ip);
+    console.log(isChanged, ip);
 });
 
 noip.update(); // Manual update, you can also provide a custom IP address
