@@ -76,6 +76,30 @@ To see supported parameters and usage examples just type:
     $ no-ip --help
 
 
+```txt
+Usage: no-ip -h [hostname] -u [user] -p [password] -t [interval(ms)] -i
+[customIP] -s
+
+Options:
+  --help, -H      Show help                                            [boolean]
+  --hostname, -h  Your hostname                              [string] [required]
+  --username, -u  Username for the noip.com DDNS account     [string] [required]
+  --password, -p  You account password                       [string] [required]
+  --ip, -i        Set a custom IP Address                               [string]
+  --offline, -o   Sets the current host to offline status.             [boolean]
+  --interval, -t  Renewal interval, in milliseconds. [number] [default: 3600000]
+  --start, -s     Start automatic renewal once an hour by default      [boolean]
+
+Examples:
+  no-ip -h hello-world.ddns.net -u hello    Start automatic DNS renewal once an
+  -p s3cr3t -s                              hour
+  no-ip -h hello-world.ddns.net -u hello    Send a single update request using
+  -p s3cr3t                                 your current IP address
+  no-ip -h hello-world.ddns.net -u hello    Send a single update request using a
+  -p s3cr3t -i 173.26.2.66                  custom IP Address
+  no-ip -h hello-world.ddns.net -u hello    Start automatic DNS renewal once a
+  -p s3cr3t -t 604800000 -s                 week
+```
 # Debug
 
 This module makes use of the node [DEBUG](https://github.com/visionmedia/debug) module.
