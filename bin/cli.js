@@ -10,7 +10,7 @@ var noip = new NoIP({
 });
 
 noip.on("error", function (err) {
-    console.log(err);
+    console.warn(err);
 });
 
 noip.on("success", function (isChanged, ip) {
