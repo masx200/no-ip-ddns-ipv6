@@ -3,13 +3,11 @@
     "version": "2.0.0",
     "description": "Noip.com Dynamic DNS update client built in Node.js ,support ipv6",
     "main": "index.js",
-    "bin": "./bin/cli.js",
+    "bin": {
+        "no-ip-ddns-ipv6": "bin/cli.js"
+    },
     "scripts": {
         "test": "standard"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/roccomuso/no-ip.git"
     },
     "keywords": [
         "no-ip",
@@ -18,12 +16,7 @@
         "node",
         "dns"
     ],
-    "author": "Rocco Musolino (@roccomuso)",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/roccomuso/no-ip/issues"
-    },
-    "homepage": "https://github.com/roccomuso/no-ip#readme",
     "dependencies": {
         "axios": "^0.21.1",
         "got": "^11.8.1",
@@ -33,5 +26,14 @@
     "devDependencies": {
         "debug": "^4.3.1",
         "standard": "^16.0.3"
-    }
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "repository": "git+https://github.com/masx200/no-ip-ddns-ipv6.git",
+    "author": "masx200 <masx200@qq.com>",
+    "bugs": {
+        "url": "https://github.com/masx200/no-ip-ddns-ipv6/issues"
+    },
+    "homepage": "https://github.com/masx200/no-ip-ddns-ipv6#readme"
 }
