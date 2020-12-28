@@ -1,6 +1,6 @@
 {
     "name": "@masx200/no-ip-ddns-ipv6",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Noip.com Dynamic DNS update client built in Node.js ,support ipv6",
     "main": "index.js",
     "bin": {
