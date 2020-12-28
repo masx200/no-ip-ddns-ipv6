@@ -2,11 +2,11 @@
 
 Noip.com Dynamic DNS update client built in Node.js ,support ipv6
 
-自动获取公共 ipv6 地址,提交域名解析
+自动查询公共 ipv6 地址,提交域名解析
 
 自动更新的最短间隔时间为 30 秒
 
-Public IPV6 addresses are automatically retrieved, and
+Public IPV6 addresses are automatically Enquiried, and
 
 the minimum time between submission of domain name resolution and automatic updates is 30 seconds
 
@@ -91,7 +91,7 @@ To see supported parameters and usage examples just type:
 ```
 
 ```txt
-Usage: no-ip -h [hostname] -u [user] -p [password] -t [interval(ms)] -i
+Usage: no-ip-ddns-ipv6 -h [hostname] -u [user] -p [password] -t [interval(ms)] -i
 [customIP] -s
 
 Options:
@@ -105,14 +105,21 @@ Options:
   --start, -s     Start automatic renewal once an hour by default      [boolean]
 
 Examples:
-  no-ip -h hello-world.ddns.net -u hello    Start automatic DNS renewal once an
-  -p s3cr3t -s                              hour
-  no-ip -h hello-world.ddns.net -u hello    Send a single update request using
-  -p s3cr3t                                 your current IP address
-  no-ip -h hello-world.ddns.net -u hello    Send a single update request using a
-  -p s3cr3t -i 173.26.2.66                  custom IP Address
-  no-ip -h hello-world.ddns.net -u hello    Start automatic DNS renewal once a
-  -p s3cr3t -t 604800000 -s                 week
+  no-ip-ddns-ipv6 -h hello-world.ddns.net -u hello    -p s3cr3t -s
+
+  Start automatic DNS renewal once an hour
+
+  no-ip-ddns-ipv6 -h hello-world.ddns.net -u hello    -p s3cr3t
+
+              Send a single update request using your current IP address
+
+  no-ip-ddns-ipv6 -h hello-world.ddns.net -u hello    -p s3cr3t -i 173.26.2.66
+
+   Send a single update request using a custom IP Address
+
+  no-ip-ddns-ipv6 -h hello-world.ddns.net -u hello   -p s3cr3t -t 604800000 -s
+
+   Start automatic DNS renewal once a week
 ```
 
 <!-- # Debug
