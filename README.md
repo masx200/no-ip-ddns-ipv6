@@ -2,6 +2,10 @@
 
 Noip.com Dynamic DNS update client built in Node.js ,support ipv6
 
+自动获取公共 ipv6 地址,提交域名解析
+
+自动更新的最短间隔时间为 30 秒
+
 thanks to @roccomuso
 
 https://github.com/roccomuso/no-ip
@@ -14,11 +18,15 @@ https://github.com/roccomuso/no-ip
 
 The easiest way to get **no-ip** is with npm:
 
-    $ npm install @masx200/no-ip-ddns-ipv6 --save
+```shell
+npm install @masx200/no-ip-ddns-ipv6 --save
+```
 
 or having it globally installed and used as a standalone tool:
 
-    $ npm install -g @masx200/no-ip-ddns-ipv6
+```shell
+npm install -g @masx200/no-ip-ddns-ipv6
+```
 
 ## Example usage
 

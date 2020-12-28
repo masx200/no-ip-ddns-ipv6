@@ -2,7 +2,7 @@
 
 var argv = require("../lib/argv");
 var NoIP = require("../lib/no-ip");
-
+console.log(argv);
 var noip = new NoIP({
     hostname: argv.hostname,
     user: argv.username,
@@ -14,7 +14,7 @@ noip.on("error", function (err) {
 });
 
 noip.on("success", function (isChanged, ip) {
-    console.log(isChanged, ip);
+    console.log("success", isChanged, ip);
 });
 
 /* CLI Flow */
