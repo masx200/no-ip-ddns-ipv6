@@ -6,6 +6,10 @@ Noip.com Dynamic DNS update client built in Node.js ,support ipv6
 
 自动更新的最短间隔时间为 30 秒
 
+Public IPV6 addresses are automatically retrieved, and
+
+the minimum time between submission of domain name resolution and automatic updates is 30 seconds
+
 thanks to @roccomuso
 
 https://github.com/roccomuso/no-ip
