@@ -1,2 +1,1 @@
-
-module.exports = require('./lib/no-ip.js')
+module.exports = require("./lib/no-ip.js");

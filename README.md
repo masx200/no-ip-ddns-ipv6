@@ -14,36 +14,35 @@ https://github.com/roccomuso/no-ip
 
 The easiest way to get **no-ip** is with npm:
 
-    $ npm install no-ip --save
+    $ npm install @masx200/no-ip-ddns-ipv6 --save
 
 or having it globally installed and used as a standalone tool:
 
-    $ npm install -g no-ip
+    $ npm install -g @masx200/no-ip-ddns-ipv6
 
 ## Example usage
 
 ```javascript
-var NoIP = require('no-ip')
+var NoIP = require("@masx200/no-ip-ddns-ipv6");
 
 var noip = new NoIP({
-  hostname: 'hello-world.ddns.net',
-  user: 'hello@world.com',
-  pass: 's3cr3tz'
-})
+  hostname: "hello-world.ddns.net",
+  user: "hello@world.com",
+  pass: "s3cr3tz",
+});
 
-noip.on('error', function(err){
-  console.log(err)
-})
+noip.on("error", function (err) {
+  console.log(err);
+});
 
-noip.on('success', function(isChanged, ip){
-  console.log(isChanged, ip)
-})
+noip.on("success", function (isChanged, ip) {
+  console.log(isChanged, ip);
+});
 
-noip.update() // Manual update, you can also provide a custom IP address
+noip.update(); // Manual update, you can also provide a custom IP address
 
 // noip.start() // start an automatic renewal every 1h by default or provide a custom ms.
 // noip.stop() // stop the previously started automatic update
-
 ```
 
 ## Events
@@ -68,13 +67,16 @@ noip.update() // Manual update, you can also provide a custom IP address
 
 If used standalone, I recommend you to start it with some process manager, like [PM2](https://github.com/Unitech/pm2).
 
-    $ no-ip -h hello-world.ddns.net -u hello -p s3cr3t -s
+```shell
+ npx @masx200/no-ip-ddns-ipv6 -h hello-world.ddns.net -u hello -p s3cr3t -s
+```
 
 That start automatic DNS renewal once an hour.
 To see supported parameters and usage examples just type:
 
-    $ no-ip --help
-
+```shell
+ npx @masx200/no-ip-ddns-ipv6 --help
+```
 
 ```txt
 Usage: no-ip -h [hostname] -u [user] -p [password] -t [interval(ms)] -i
@@ -100,12 +102,13 @@ Examples:
   no-ip -h hello-world.ddns.net -u hello    Start automatic DNS renewal once a
   -p s3cr3t -t 604800000 -s                 week
 ```
-# Debug
+
+<!-- # Debug
 
 This module makes use of the node [DEBUG](https://github.com/visionmedia/debug) module.
 You can enable it setting the `DEBUG` env var to `no-ip` before the app starts:
 
-    $ DEBUG=no-ip
+    $ DEBUG=no-ip -->
 
 ## Author
 
