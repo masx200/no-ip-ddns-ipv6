@@ -1,1 +1,1 @@
-module.exports = require("./lib/no-ip.js");
+export { default } from "./lib/no-ip.js";

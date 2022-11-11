@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var argv = require("../lib/argv");
-var NoIP = require("../lib/no-ip");
+import argv from "../lib/argv.js";
+import NoIP from "../lib/no-ip.js";
 console.log(argv);
 var noip = new NoIP({
     hostname: argv.hostname,
@@ -16,8 +16,6 @@ noip.on("error", function (err) {
 noip.on("success", function (isChanged, ip) {
     console.log("success", isChanged, ip);
 });
-
-/* CLI Flow */
 
 noip.setOffline(argv.offline);
 
