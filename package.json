@@ -30,8 +30,7 @@
         "@types/yargs": "^17.0.13",
         "@types/ip": "^1.1.0",
         "@types/ms": "^0.7.31",
-        "prettier": "^2.2.1",
-        "standard": "^17.0.0"
+        "prettier": "^2.2.1"
     },
     "directories": {
         "lib": "lib"
